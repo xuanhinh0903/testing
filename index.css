@@ -9,7 +9,7 @@
 }
 
 .home__left{
-    max-width: 7.83%;
+    width: 7.83%;
     background-color:#000;
     color: #AAAAAA;
     cursor: pointer;
@@ -28,6 +28,8 @@
     line-height: 19px;
     color: #FFFFFF;
     padding: 14px 91px 11px 16px;
+    max-width: 150px;
+    max-height: 44px;
     border-bottom: 1px solid #464244;
 }
 .container__right{
@@ -37,7 +39,7 @@
 
 .logo{
     display: flex;
-    margin: 0 auto 30px;
+    margin: 20px auto 30px;
 }
 
 .intro{
@@ -108,4 +110,52 @@
 
 footer{
     border-top: 1px solid #464244;
+}
+
+@media only screen and (max-width: 1290px) {
+    .home__left{
+        background-color: #000;
+        color: #AAAAAA;
+        cursor: pointer;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .detail__home{
+        margin-bottom: 100px;
+    }
+
+    .footer{
+        padding: 20px;
+    }
+
+    footer{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .text__homeLeft{
+        width: 25%;
+        margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .detail__home{
+        max-width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+    .detail__item{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto 40px;
+    }
 }
